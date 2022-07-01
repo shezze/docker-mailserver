@@ -49,6 +49,13 @@ Thanks goes to these wonderful people ✨
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/polarathene>
+            <img src=https://avatars.githubusercontent.com/u/5098581?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Brennan Kinney/>
+            <br />
+            <sub style="font-size:14px"><b>Brennan Kinney</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/wernerfred>
             <img src=https://avatars.githubusercontent.com/u/20406381?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Frederic Werner/>
             <br />
@@ -60,13 +67,6 @@ Thanks goes to these wonderful people ✨
             <img src=https://avatars.githubusercontent.com/u/545838?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Josef Friedrich/>
             <br />
             <sub style="font-size:14px"><b>Josef Friedrich</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/polarathene>
-            <img src=https://avatars.githubusercontent.com/u/5098581?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Brennan Kinney/>
-            <br />
-            <sub style="font-size:14px"><b>Brennan Kinney</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
