@@ -12,26 +12,28 @@
         <meta name="author" content="docker-mailserver (Github Organization)">
       
       
-        <link rel="canonical" href="https://docker-mailserver.github.io/docker-mailserver/edge/contributing/issues-and-pull-requests/">
+        <link rel="canonical" href="https://docker-mailserver.github.io/docker-mailserver/edge/examples/use-cases/ios-mail-push-support/">
       
       
-        <link rel="prev" href="../tests/">
+        <link rel="prev" href="../imap-folders/">
       
       
+        <link rel="next" href="../auth-lua/">
       
-      <link rel="icon" href="../../assets/logo/favicon-32x32.png">
+      
+      <link rel="icon" href="../../../assets/logo/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.16">
     
     
       
-        <title>Contributing | Issues and Pull Requests - Docker Mailserver</title>
+        <title>Advanced | iOS Mail Push Support - Docker Mailserver</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/customizations.css">
+      <link rel="stylesheet" href="../../../assets/css/customizations.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#opening-an-issue" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -96,9 +98,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Docker Mailserver" class="md-header__button md-logo" aria-label="Docker Mailserver" data-md-component="logo">
+    <a href="../../.." title="Docker Mailserver" class="md-header__button md-logo" aria-label="Docker Mailserver" data-md-component="logo">
       
-  <img src="../../assets/logo/dmo-logo-white.min.svg" alt="logo">
+  <img src="../../../assets/logo/dmo-logo-white.min.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contributing | Issues and Pull Requests
+              Advanced | iOS Mail Push Support
             
           </span>
         </div>
@@ -222,7 +224,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -239,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../introduction/" class="md-tabs__link">
+      <a href="../../../introduction/" class="md-tabs__link">
         
   
     
@@ -256,7 +258,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../usage/" class="md-tabs__link">
+      <a href="../../../usage/" class="md-tabs__link">
         
   
     
@@ -275,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../config/environment/" class="md-tabs__link">
+        <a href="../../../config/environment/" class="md-tabs__link">
           
   
   Configuration
@@ -289,17 +291,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../examples/tutorials/basic-installation/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../tutorials/basic-installation/" class="md-tabs__link">
           
   
   Examples
@@ -318,7 +324,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../faq/" class="md-tabs__link">
+      <a href="../../../faq/" class="md-tabs__link">
         
   
     
@@ -333,13 +339,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../general/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../contributing/general/" class="md-tabs__link">
           
   
   Contributing
@@ -406,9 +410,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Docker Mailserver" class="md-nav__button md-logo" aria-label="Docker Mailserver" data-md-component="logo">
+    <a href="../../.." title="Docker Mailserver" class="md-nav__button md-logo" aria-label="Docker Mailserver" data-md-component="logo">
       
-  <img src="../../assets/logo/dmo-logo-white.min.svg" alt="logo">
+  <img src="../../../assets/logo/dmo-logo-white.min.svg" alt="logo">
 
     </a>
     Docker Mailserver
@@ -435,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -455,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../introduction/" class="md-nav__link">
+      <a href="../../../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../usage/" class="md-nav__link">
+      <a href="../../../usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -535,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/environment/" class="md-nav__link">
+      <a href="../../../config/environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/user-management/" class="md-nav__link">
+      <a href="../../../config/user-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/best-practices/autodiscover/" class="md-nav__link">
+      <a href="../../../config/best-practices/autodiscover/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -638,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/best-practices/dkim_dmarc_spf/" class="md-nav__link">
+      <a href="../../../config/best-practices/dkim_dmarc_spf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/best-practices/mta-sts/" class="md-nav__link">
+      <a href="../../../config/best-practices/mta-sts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -728,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/security/understanding-the-ports/" class="md-nav__link">
+      <a href="../../../config/security/understanding-the-ports/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/security/ssl/" class="md-nav__link">
+      <a href="../../../config/security/ssl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/security/fail2ban/" class="md-nav__link">
+      <a href="../../../config/security/fail2ban/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/security/mail_crypt/" class="md-nav__link">
+      <a href="../../../config/security/mail_crypt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/security/rspamd/" class="md-nav__link">
+      <a href="../../../config/security/rspamd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/debugging/" class="md-nav__link">
+      <a href="../../../config/debugging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/pop3/" class="md-nav__link">
+      <a href="../../../config/pop3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/setup.sh/" class="md-nav__link">
+      <a href="../../../config/setup.sh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/optional-config/" class="md-nav__link">
+      <a href="../../../config/advanced/optional-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1005,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/maintenance/update-and-cleanup/" class="md-nav__link">
+      <a href="../../../config/advanced/maintenance/update-and-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1074,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/override-defaults/dovecot/" class="md-nav__link">
+      <a href="../../../config/advanced/override-defaults/dovecot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1095,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/override-defaults/postfix/" class="md-nav__link">
+      <a href="../../../config/advanced/override-defaults/postfix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1116,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/override-defaults/user-patches/" class="md-nav__link">
+      <a href="../../../config/advanced/override-defaults/user-patches/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/auth-ldap/" class="md-nav__link">
+      <a href="../../../config/advanced/auth-ldap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/auth-oauth2/" class="md-nav__link">
+      <a href="../../../config/advanced/auth-oauth2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-sieve/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-sieve/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1208,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-fetchmail/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-fetchmail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1229,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-getmail/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-getmail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1290,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-forwarding/relay-hosts/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-forwarding/relay-hosts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1311,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-forwarding/aws-ses/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-forwarding/aws-ses/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1332,7 +1336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/mail-forwarding/gmail-smtp/" class="md-nav__link">
+      <a href="../../../config/advanced/mail-forwarding/gmail-smtp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1361,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/full-text-search/" class="md-nav__link">
+      <a href="../../../config/advanced/full-text-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1382,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/kubernetes/" class="md-nav__link">
+      <a href="../../../config/advanced/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1403,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/ipv6/" class="md-nav__link">
+      <a href="../../../config/advanced/ipv6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1424,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/podman/" class="md-nav__link">
+      <a href="../../../config/advanced/podman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1445,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/advanced/dovecot-master-accounts/" class="md-nav__link">
+      <a href="../../../config/advanced/dovecot-master-accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1478,25 +1482,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1507,7 +1514,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Examples
@@ -1561,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/tutorials/basic-installation/" class="md-nav__link">
+      <a href="../../tutorials/basic-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/tutorials/mailserver-behind-proxy/" class="md-nav__link">
+      <a href="../../tutorials/mailserver-behind-proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/tutorials/crowdsec/" class="md-nav__link">
+      <a href="../../tutorials/crowdsec/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/tutorials/docker-build/" class="md-nav__link">
+      <a href="../../tutorials/docker-build/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/tutorials/blog-posts/" class="md-nav__link">
+      <a href="../../tutorials/blog-posts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1671,8 +1678,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1680,13 +1689,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -1700,7 +1707,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Use Cases
@@ -1714,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/use-cases/forward-only-mailserver-with-ldap-authentication/" class="md-nav__link">
+      <a href="../forward-only-mailserver-with-ldap-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1735,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/use-cases/imap-folders/" class="md-nav__link">
+      <a href="../imap-folders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1753,10 +1760,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../examples/use-cases/ios-mail-push-support/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    iOS Mail Push Support
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1765,6 +1790,78 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-concerns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Privacy concerns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other configuration options
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1777,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/use-cases/auth-lua/" class="md-nav__link">
+      <a href="../auth-lua/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1798,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/use-cases/bind-smtp-network-interface/" class="md-nav__link">
+      <a href="../bind-smtp-network-interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1834,7 +1931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1851,28 +1948,25 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1883,7 +1977,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Contributing
@@ -1897,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../general/" class="md-nav__link">
+      <a href="../../../contributing/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1918,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tests/" class="md-nav__link">
+      <a href="../../../contributing/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1936,28 +2030,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Issues and Pull Requests
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../contributing/issues-and-pull-requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1966,72 +2042,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#opening-an-issue" class="md-nav__link">
-    <span class="md-ellipsis">
-      Opening an Issue
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Opening an Issue">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#filing-a-bug-report" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filing a Bug Report
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pull-requests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull Requests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Pull Requests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#submit-a-pull-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Submit a Pull-Request
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2109,50 +2119,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#opening-an-issue" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening an Issue
+      Introduction
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Opening an Issue">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#filing-a-bug-report" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filing a Bug Report
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pull-requests" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull Requests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Pull Requests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#submit-a-pull-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Submit a Pull-Request
+      Prerequisites
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-concerns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Privacy concerns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other configuration options
+    </span>
+  </a>
   
 </li>
       
@@ -2171,7 +2187,7 @@
                   
 
   
-    <a href="https://github.com/docker-mailserver/docker-mailserver/edit/master/docs/content/contributing/issues-and-pull-requests.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/docker-mailserver/docker-mailserver/edit/master/docs/content/examples/use-cases/ios-mail-push-support.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2180,50 +2196,237 @@
     
       
     
-    <a href="https://github.com/docker-mailserver/docker-mailserver/raw/master/docs/content/contributing/issues-and-pull-requests.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/docker-mailserver/docker-mailserver/raw/master/docs/content/examples/use-cases/ios-mail-push-support.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Issues and Pull Requests</h1>
+  <h1>iOS Mail Push Support</h1>
 
-<p>This project is Open Source. That means that you can contribute on enhancements, bug fixing or improving the documentation.</p>
-<h2 id="opening-an-issue"><a class="toclink" href="#opening-an-issue">Opening an Issue</a></h2>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p><strong>Before opening an issue</strong>, read the <a href="https://github.com/docker-mailserver/docker-mailserver/blob/master/README.md"><code>README</code></a> carefully, study the docs for your version (maybe <a href="https://docker-mailserver.github.io/docker-mailserver/latest">latest</a>), the Postfix/Dovecot documentation and your search engine you trust. The issue tracker is not meant to be used for unrelated questions!</p>
-</div>
-<p>When opening an issue, please provide details use case to let the community reproduce your problem. Please start DMS with the environment variable <code>LOG_LEVEL</code> set to <code>debug</code> or <code>trace</code> and paste the output into the issue.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p><strong>Use the issue templates</strong> to provide the necessary information. Issues which do not use these templates are not worked on and closed.</p>
-</div>
-<p>By raising issues, I agree to these terms and I understand, that the rules set for the issue tracker will help both maintainers as well as everyone to find a solution.</p>
-<p>Maintainers take the time to improve on this project and help by solving issues together. It is therefore expected from others to make an effort and <strong>comply with the rules</strong>.</p>
-<h3 id="filing-a-bug-report"><a class="toclink" href="#filing-a-bug-report">Filing a Bug Report</a></h3>
-<p>Thank you for participating in this project and reporting a bug. Docker Mail Server (DMS) is a community-driven project, and each contribution counts!</p>
-<p>Maintainers and moderators are volunteers. We greatly appreciate reports that take the time to provide detailed information via the template, enabling us to help you in the best and quickest way. Ignoring the template provided may seem easier, but discourages receiving any support (<em>via assignment of the label <code>meta/no template - no support</code></em>).</p>
-<p>Markdown formatting can be used in almost all text fields (<em>unless stated otherwise in the description</em>).</p>
-<p>Be as precise as possible, and if in doubt, it's best to add more information that too few.</p>
-<p>When an option is marked with "not officially supported" / "unsupported", then support is dependent on availability from specific maintainers.</p>
-<h2 id="pull-requests"><a class="toclink" href="#pull-requests">Pull Requests</a></h2>
-<div class="admonition question">
-<p class="admonition-title">Motivation</p>
-<p>You want to add a feature? Feel free to start creating an issue explaining what you want to do and how you're thinking doing it. Other users may have the same need and collaboration may lead to better results.</p>
-</div>
-<h3 id="submit-a-pull-request"><a class="toclink" href="#submit-a-pull-request">Submit a Pull-Request</a></h3>
-<p>The development workflow is the following:</p>
+<h2 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h2>
+<p>iOS Mail currently does not support the IMAP idle extension. Therefore users can only either check manually or configure intervals for fetching mails in their mail account preferences when using the default configuration.</p>
+<p>To support mail push Dovecot needs to advertise the <code>XAPPLEPUSHSERVICE</code> IMAP extension as well as sending the actual push notifications to the Apple Push Notification service (APNs) which will forward them to the device.</p>
+<p>This can be done with two components:</p>
+<ul>
+<li>A Dovecot plugin (<code>dovecot-xaps-plugin</code>) which is triggered whenever a mail is created or moved from/to a mail folder.</li>
+<li>A daemon service (<code>dovecot-xaps-daemon</code>) that manages both the device registrations as well as sending notifications to the APNs.</li>
+</ul>
+<h2 id="prerequisites"><a class="toclink" href="#prerequisites">Prerequisites</a></h2>
+<ul>
+<li>An Apple developer account to create the required Apple Push Notification service certificate.</li>
+<li>Knowledge creating Docker images, using the command-line, and creating shell scripts.</li>
+</ul>
+<h2 id="limitations"><a class="toclink" href="#limitations">Limitations</a></h2>
+<ul>
+<li>You need to maintain a custom <code>docker-mailserver</code> image.</li>
+<li>Push support is limited to the INBOX folder. Changes to other folders will not be pushed to the device regardless of the configuration settings.</li>
+<li>You currently cannot use the same account UUID on multiple devices. This means that if you use the same backup on multiple devices (e.g. old phone / new phone) only one of them will get the notification. Use different backups or recreate the mail account.</li>
+</ul>
+<h2 id="privacy-concerns"><a class="toclink" href="#privacy-concerns">Privacy concerns</a></h2>
+<ul>
+<li>The service does not send any part of the actual message to Apple.</li>
+<li>The information sent contains the device UUID to notify and the (on-device) account UUID which was generated by the iOS mail application when creating the account.</li>
+<li>Upon receiving the notification, the iOS mail application will connect to the IMAP server given by the provided account UUID and fetch the mail to notify the user.</li>
+<li>Apple therefore does not know the mail address for which the mail was received, only that a specific account on a specific device should be notified that a new mail or that a mail was moved to the INBOX folder.</li>
+</ul>
+<h2 id="installation"><a class="toclink" href="#installation">Installation</a></h2>
+<p>Both components will be built using Docker and included into a custom <code>docker-mailserver</code> image. Afterwards the required configuration is added to <code>docker-data/dms/config</code>. The registration data is stored in <code>/var/mail-state/lib-xapsd</code>.</p>
 <ol>
-<li>Fork the project and clone your fork with <code>git clone --recurse-submodules ...</code> or run <code>git submodule update --init --recursive</code> after you cloned your fork</li>
-<li>Write the code that is needed :D</li>
-<li>Add integration tests if necessary</li>
-<li><a href="../general/#tests">Prepare your environment and run linting and tests</a></li>
-<li>Document your improvements if necessary (e.g. if you introduced new environment variables, describe those in the <a href="../../config/environment/">ENV documentation</a>) and add your changes the changelog under the "Unreleased" section</li>
-<li><a href="https://help.github.com/articles/closing-issues-via-commit-messages/">Commit</a> (and <a href="https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key">sign your commit</a>), push and create a pull-request to merge into <code>master</code>. Please <strong>use the pull-request template</strong> to provide a minimum of contextual information and make sure to meet the requirements of the checklist.</li>
+<li>
+<p>Create a Dockerfile to build a <code>docker-mailserver</code> image that includes the <a href="https://github.com/freswa/dovecot-xaps-plugin"><code>dovecot-xaps-plugin</code></a> as well as the <a href="https://github.com/freswa/dovecot-xaps-daemon"><code>dovecot-xaps-daemon</code></a>. This is required to ensure that the Dovecot plugin is built against the same Dovecot version. The <code>:edge</code> tag is used here, but you might want to use a released version instead.</p>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">mailserver/docker-mailserver:edge</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">dovecot-plugin-xaps</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/tmp/dovecot-xaps-plugin</span>
+<span class="k">RUN</span><span class="w"> </span>&lt;&lt;EOF
+<span class="w">    </span>apt-get<span class="w"> </span>update
+<span class="w">    </span>apt-get<span class="w"> </span>-y<span class="w"> </span>--no-install-recommends<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>cmake<span class="w"> </span>make<span class="w"> </span>build-essential<span class="w"> </span>dovecot-dev
+<span class="w">    </span>git<span class="w"> </span>clone<span class="w"> </span>--single-branch<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/freswa/dovecot-xaps-plugin.git<span class="w"> </span>.
+<span class="w">    </span>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<span class="w">    </span>cmake<span class="w"> </span>..<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release
+<span class="w">    </span>make<span class="w"> </span>install
+EOF
+
+<span class="c"># Use an older Go version as Go &gt;= 1.20 causes this issue: https://github.com/freswa/dovecot-xaps-daemon/issues/24#issuecomment-1483876081</span>
+<span class="c"># Note that the underlying issue are non-standard-compliant Apple http servers which might get fixed at some point</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.19-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">dovecot-xaps-daemon</span>
+<span class="k">ENV</span><span class="w"> </span><span class="nv">GOPROXY</span><span class="o">=</span>https://proxy.golang.org,direct
+<span class="k">ENV</span><span class="w"> </span><span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">0</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/go/dovecot-xaps-daemon</span>
+<span class="k">RUN</span><span class="w"> </span>&lt;&lt;EOF
+<span class="w">    </span>apk<span class="w"> </span>add<span class="w"> </span>--no-cache<span class="w"> </span>--virtual<span class="w"> </span>build-dependencies<span class="w"> </span>git
+<span class="w">    </span>git<span class="w"> </span>clone<span class="w"> </span>--single-branch<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/freswa/dovecot-xaps-daemon<span class="w"> </span>.
+<span class="w">    </span>go<span class="w"> </span>build<span class="w"> </span>./cmd/xapsd
+EOF
+
+<span class="k">FROM</span><span class="w"> </span><span class="s">mailserver/docker-mailserver:edge</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>dovecot-plugin-xaps<span class="w"> </span>/usr/lib/dovecot/modules/*_xaps_*<span class="w"> </span>/usr/lib/dovecot/modules/
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>dovecot-xaps-daemon<span class="w"> </span>/go/dovecot-xaps-daemon/xapsd<span class="w"> </span>/usr/bin/xapsd
+
+<span class="c"># create a non-root user for the daemon process as well as configuration and run state directories</span>
+<span class="k">RUN</span><span class="w"> </span>&lt;&lt;EOF
+<span class="w">    </span>adduser<span class="w"> </span>--quiet<span class="w"> </span>--system<span class="w"> </span>--group<span class="w"> </span>--disabled-password<span class="w"> </span>--home<span class="w"> </span>/var/mail-state/lib-xapsd<span class="w"> </span>--no-create-home<span class="w"> </span>xapsd
+<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/run/xapsd<span class="w"> </span>/etc/xapsd
+EOF
+</code></pre></div>
+</li>
+<li>
+<p>Build the new image:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>yourname/docker-mailserver<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p>Modify your <code>compose.yaml</code> to use the newly created image:
+    <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">services</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">mailserver</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yourname/docker-mailserver:latest</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Recreate the container:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>down
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div></p>
+</li>
+<li>
+<p>Create a hash of your Apple developer account password using the provided <code>xapsd -pass</code> command:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mailserver<span class="w"> </span>xapsd<span class="w"> </span>-pass
+</code></pre></div></p>
+</li>
+<li>
+<p>Add configuration for both components:</p>
+<ul>
+<li>
+<p>Create a folder named <code>xaps</code> in <code>docker-data/dms/config</code>.</p>
+</li>
+<li>
+<p>Create a file named <code>xapsd.yaml</code> in <code>docker-data/dms/config/xaps</code>. </p>
+<ul>
+<li>Replace <code>appleId</code> and <code>appleIdHashedPassword</code> with your actual credentials. For reference see also <a href="https://github.com/freswa/dovecot-xaps-daemon/blob/master/configs/xapsd/xapsd.yaml">here</a>.</li>
+<li>The service will use the provided username/hash combination to automatically request a new certificate from Apple as well as renewing an older certificate if needed.</li>
+</ul>
+<div class="highlight"><span class="filename">xapsd.yaml</span><pre><span></span><code><span class="c1"># set the loglevel to either</span>
+<span class="c1"># trace, debug, error, fatal, info, panic or warn</span>
+<span class="c1"># Default: info</span>
+<span class="nt">loglevel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">info</span>
+
+<span class="c1"># xapsd creates a json file to store the registration persistent on disk.</span>
+<span class="c1"># This sets the location of the file.</span>
+<span class="nt">databaseFile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/mail-state/lib-xapsd/database.json</span>
+
+<span class="c1"># xapsd listens on a socket for http/https requests from the dovecot plugin.</span>
+<span class="c1"># This sets the address and port number of the listen socket.</span>
+<span class="nt">listenAddr</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;127.0.0.1&#39;</span>
+<span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">11619</span>
+
+<span class="c1"># xapsd is able to listen on a HTTPS Socket to allow HTTP/2 to be used</span>
+<span class="c1"># SSL is enabled implicitly when certfile and keyfile exist</span>
+<span class="c1"># !!! only use HTTPS for connection pooling with a proxy e.g. nginx or HaProxy</span>
+<span class="c1"># !!! direct usage with the plugin is discouraged and unsupported</span>
+<span class="nt">tlsCertfile</span><span class="p">:</span>
+<span class="nt">tlsKeyfile</span><span class="p">:</span>
+<span class="nt">tlsListenAddr</span><span class="p">:</span>
+<span class="nt">tlsPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">11620</span>
+
+<span class="c1"># Notifications that are not initiated by new messages are not sent immediately for two reasons:</span>
+<span class="c1"># 1. When you move/copy/delete messages you most likely move/copy/delete more messages within a short period of time.</span>
+<span class="c1"># 2. You don&#39;t need your mailboxes to synchronize immediately since they are automatically synchronized when opening</span>
+<span class="c1">#    the app</span>
+<span class="c1"># If a new message comes and the move/copy/delete notification is still on hold it will be sent with the notification</span>
+<span class="c1"># for the new message.</span>
+<span class="c1"># This sets the interval to check for delayed messages.</span>
+<span class="nt">checkInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+
+<span class="c1"># Set the time how long notifications for not-new messages should be delayed until they are sent.</span>
+<span class="c1"># Whenever checkInterval runs, it checks if &quot;delay&quot; &lt;= &quot;waiting time&quot; and sends the notification if the expression is</span>
+<span class="c1"># true.</span>
+<span class="nt">delay</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span>
+
+<span class="c1"># To retrieve certificates from Apple, we need to login with a valid Apple ID</span>
+<span class="c1"># The accounts email must be given in cleartext, but the password has to</span>
+<span class="c1"># be hashed before sending it. To not leak working credentials on running servers,</span>
+<span class="c1"># we do not accept the cleartext password here.</span>
+<span class="nt">appleId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">foo@example.com</span>
+
+<span class="c1"># use `xaps -pass` to calculate the hash of the apple id password</span>
+<span class="nt">appleIdHashedPassword</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bar</span>
+</code></pre></div>
+</li>
+<li>
+<p>Create a file named <code>95-xaps.conf</code> in <code>docker-data/dms/config/xaps</code>. For reference see also <a href="https://github.com/freswa/dovecot-xaps-plugin/blob/master/xaps.conf">here</a>.
+    <div class="highlight"><span class="filename">95-xaps.conf</span><pre><span></span><code>protocol imap {
+  mail_plugins = $mail_plugins notify push_notification xaps_push_notification xaps_imap
+}
+
+protocol lda {
+  mail_plugins = $mail_plugins notify push_notification xaps_push_notification
+}
+
+protocol lmtp {
+  mail_plugins = $mail_plugins notify push_notification xaps_push_notification
+}
+
+plugin {
+    # xaps_config contains xaps specific configuration parameters
+    # url:              protocol, hostname and port under which xapsd listens
+    # user_lookup: Use if you want to determine the username used for PNs from environment variables provided by
+    #                   login mechanism. Value is variable name to look up.
+    # max_retries:      maximum num of retries the http client connects to the xaps daemon
+    # timeout_msecs     http timeout of the http connection
+    xaps_config = url=http://127.0.0.1:11619 user_lookup=theattribute max_retries=6 timeout_msecs=5000
+    push_notification_driver = xaps
+}
+</code></pre></div></p>
+</li>
+<li>
+<p>Create a supervisord file named <code>xapsd.conf</code> in <code>docker-data/dms/config/xaps</code> with the following content:
+    <div class="highlight"><span class="filename">xapsd.conf</span><pre><span></span><code>[program:xapsd]
+startsecs=0
+autostart=false
+autorestart=true
+stdout_logfile=/var/log/supervisor/%(program_name)s.log
+stderr_logfile=/var/log/supervisor/%(program_name)s.log
+user=xapsd
+command=/usr/bin/xapsd
+pidfile=/var/run/xapsd/xapsd.pid
+</code></pre></div></p>
+</li>
+<li>
+<p>Create or update your <code>user-patches.sh</code> in <code>docker-data/dms/config</code> to move the files to their final location as well as starting the daemon service:
+    <div class="highlight"><span class="filename">user-patches.sh</span><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Copy the configs to internal locations:</span>
+cp<span class="w"> </span>/tmp/docker-mailserver/xaps/95-xaps.conf<span class="w"> </span>/etc/dovecot/conf.d/95-xaps.conf
+cp<span class="w"> </span>/tmp/docker-mailserver/xaps/xapsd.yaml<span class="w"> </span>/etc/xapsd/xapsd.yaml
+cp<span class="w"> </span>/tmp/docker-mailserver/xaps/xapsd.conf<span class="w"> </span>/etc/supervisor/conf.d/xapsd.conf
+
+<span class="c1"># Setup data persistence and ensure ownership is always for xapsd:</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>/var/mail-state/lib-xapsd
+chown<span class="w"> </span>-R<span class="w"> </span>xapsd:xapsd<span class="w"> </span>/var/mail-state/lib-xapsd
+
+<span class="c1"># Start the xaps daemon:</span>
+supervisorctl<span class="w"> </span>update
+supervisorctl<span class="w"> </span>start<span class="w"> </span>xapsd
+</code></pre></div></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Recreate the container again to apply the new configuration:
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>down
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div></p>
+</li>
+<li>
+<p>Recreate your mail account on your iOS device and check the logs in <code>/var/log/supervisor/dovecot.log</code> and <code>/var/log/supervisor/xapsd.log</code> for any errors.</p>
+</li>
 </ol>
-<p>Pull requests are automatically tested against the CI and will be reviewed when tests pass. When your changes are validated, your branch is merged. CI builds the new <code>:edge</code> image immediately and your changes will be includes in the next version release.</p>
+<h2 id="other-configuration-options"><a class="toclink" href="#other-configuration-options">Other configuration options</a></h2>
+<p>Both device registration and notifications send a username to the daemon to lookup the device. While the registration and other IMAP operations in Dovecot will send the Dovecot username, LMTP will send the provided authentication username.</p>
+<p>The format of that username is specified by the <code>auth_username_format</code> Dovecot setting. If you are not using mail addresses as Dovecot usernames - e.g. when using LDAP - you can either change the <code>auth_username_format</code> or add the mail address as property to the user account and use the lookup feature (see below).</p>
+<div class="highlight"><span class="filename">user-patches.sh</span><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;s|^#?(auth_username_format =).*|\1 %Ln|&quot;</span><span class="w"> </span>/etc/dovecot/conf.d/10-auth.conf
+</code></pre></div>
+<p>You can also use notifications for Dovecot alias mailboxes. Depending on your server configuration, this might require to add the original Dovecot username as <a href="https://doc.dovecot.org/configuration_manual/authentication/user_database_extra_fields/">Dovecot attribute</a> to the login user as well as changing the <code>user_lookup=theattribute</code> in <code>95-xaps.conf</code> to perform the lookup of that attribute.</p>
 
 
 
@@ -2283,10 +2486,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.instant", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
   </body>
