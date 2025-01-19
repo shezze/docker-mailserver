@@ -1754,10 +1754,10 @@ Thanks goes to these wonderful people ✨
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/thechubbypanda">
-            <img src="https://avatars.githubusercontent.com/u/33595996?v=4" width="100;" alt="thechubbypanda"/>
+        <a href="https://github.com/yottapanda">
+            <img src="https://avatars.githubusercontent.com/u/33595996?v=4" width="100;" alt="yottapanda"/>
             <br />
-            <sub><b>thechubbypanda</b></sub>
+            <sub><b>yottapanda</b></sub>
         </a>
     </td>
     <td align="center">
